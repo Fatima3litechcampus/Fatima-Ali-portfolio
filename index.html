@@ -1,19 +1,195 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<title>السيرة الذاتية - فاطمة علي</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>فاطمة علي آل طالع | ملف أعمال</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-body { font-family: Tahoma, sans-serif; background-color: #f9f9f9; color: #333; text-align: center; padding: 50px; }
-.card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); display: inline-block; }
-h1 { color: #5a2d82; }
+:root{--bg:#f5f6f8;--card:#fff;--ink:#1c2538;--mute:#5d6678;--line:#dde1e8;--blue:#1f5fa8;--red:#c8372d;--ochre:#e0a526;--green:#2f7d5b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121722;--card:#1b2231;--ink:#eef0f5;--mute:#a3abbb;--line:#2e384c;--blue:#6aa6ec;--red:#ef7a70;--ochre:#e8b84a;--green:#5fbf93}}
+:root[data-theme="dark"]{--bg:#121722;--card:#1b2231;--ink:#eef0f5;--mute:#a3abbb;--line:#2e384c;--blue:#6aa6ec;--red:#ef7a70;--ochre:#e8b84a;--green:#5fbf93}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",Tahoma,sans-serif;line-height:1.8}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+.band{height:14px;background:
+linear-gradient(135deg,var(--red) 25%,transparent 25%) 0 0/28px 14px,
+linear-gradient(225deg,var(--ochre) 25%,transparent 25%) 0 0/28px 14px,
+var(--blue)}
+header{padding:48px 0 32px}
+h1{font-size:clamp(2.2rem,8vw,3.4rem);line-height:1.2;margin:0 0 8px;font-weight:700}
+.role{font-size:1.15rem;color:var(--blue);font-weight:500;margin:0 0 16px}
+.lead{color:var(--mute);max-width:60ch;margin:0 0 20px}
+.stats{display:flex;flex-wrap:wrap;gap:10px}
+.stats span{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:6px 14px;font-size:.92rem}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:8px;padding-bottom:8px}
+nav a{white-space:nowrap;color:var(--ink);text-decoration:none;padding:4px 14px;border-radius:20px;font-size:.95rem}
+nav a:hover,nav a:focus-visible{background:var(--card);outline:2px solid var(--blue)}
+section{padding:36px 0 8px}
+h2{font-size:1.5rem;margin:0 0 18px}
+.tl{position:relative;margin:0;padding:0 24px 0 0;list-style:none;border-right:3px solid var(--line)}
+.tl li{position:relative;margin-bottom:12px}
+.tl li::before{content:"";position:absolute;right:-33px;top:18px;width:14px;height:14px;border-radius:50%;background:var(--blue);border:3px solid var(--bg)}
+.tl li:nth-child(2)::before{background:var(--ochre)}.tl li:nth-child(3)::before{background:var(--green)}.tl li:nth-child(4)::before{background:var(--red)}
+.tl button{all:unset;display:block;width:100%;cursor:pointer;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px}
+.tl button:focus-visible{outline:2px solid var(--blue)}
+.tl b{display:block}.tl small{color:var(--mute)}
+.tl .more{display:none;margin-top:8px;color:var(--mute);font-size:.95rem}
+.tl li.open .more{display:block}
+.tl .more div{margin-bottom:4px}
+.grid{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:6px 14px;font-size:.95rem}
+h3{font-size:1.05rem;margin:20px 0 10px;color:var(--mute);font-weight:500}
+.slider{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px 22px;position:relative}
+.slide{display:none}.slide.on{display:block}
+.slide p{margin:0 0 14px}
+.who{color:var(--mute);font-size:.92rem;border-top:1px solid var(--line);padding-top:12px}
+.tag{display:inline-block;background:var(--blue);color:#fff;border-radius:6px;padding:0 10px;font-size:.85rem;margin-bottom:10px}
+:root[data-theme="dark"] .tag{color:#10151f}
+.ctrl{display:flex;align-items:center;justify-content:space-between;margin-top:14px}
+.ctrl button{background:var(--blue);color:#fff;border:0;border-radius:8px;padding:6px 18px;font:inherit;cursor:pointer}
+:root[data-theme="dark"] .ctrl button{color:#10151f}
+.ctrl button:focus-visible{outline:3px solid var(--ochre)}
+.dots{display:flex;gap:6px}.dots i{width:9px;height:9px;border-radius:50%;background:var(--line)}.dots i.on{background:var(--blue)}
+.contact a{color:var(--blue);font-weight:500}
+footer{padding:36px 0 40px;color:var(--mute);font-size:.88rem}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .tag,:root:not([data-theme="light"]) .ctrl button{color:#10151f}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.kit{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--ochre);border-radius:4px 4px 12px 12px;padding:20px 22px}
+.kit b{font-size:1.15rem}.kit p{margin:6px 0 14px;color:var(--mute)}
+.say{margin:0 0 20px;padding:0;list-style:none}
+.say li{font-size:clamp(1.2rem,4.8vw,1.75rem);font-weight:700;line-height:1.5;padding-right:16px;border-right:6px solid var(--blue);margin-bottom:10px}
+.say li:nth-child(2){border-color:var(--red)}.say li:nth-child(3){border-color:var(--ochre)}
+.folders{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.folders div{background:var(--bg);border:1px solid var(--line);border-top:5px solid var(--blue);border-radius:8px;padding:10px 14px;color:var(--mute);font-size:.95rem}
+.folders div b{display:block;color:var(--ink);font-size:1rem}
+.folders div:nth-child(2){border-top-color:var(--red)}.folders div:nth-child(3){border-top-color:var(--green)}.folders div:nth-child(4){border-top-color:var(--ochre)}
+.pbtn{font:inherit;font-size:.9rem;background:none;border:1px solid var(--line);color:var(--ink);border-radius:20px;padding:2px 14px;cursor:pointer;margin-bottom:18px}
+.pbtn:focus-visible{outline:2px solid var(--blue)}
+.qr{display:flex;align-items:center;gap:14px;margin-top:8px}
+#qr{background:#fff;padding:8px;border-radius:8px;border:1px solid var(--line);line-height:0}
+.qr small{color:var(--mute);max-width:22ch}
+@media print{
+@page{margin:14mm}
+body{background:#fff;color:#000;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+nav,.ctrl,.pbtn{display:none}
+.slide{display:block;margin-bottom:12px;break-inside:avoid}
+.tl .more{display:block}
+.tl li,section,.kit,.slider{break-inside:avoid}
+.slider{border:0;padding:0}
+}
 </style>
 </head>
 <body>
-<div class="card">
-<h1>فاطمة علي</h1>
-<p>خريجة نظم معلومات - قسم علوم الحاسب</p>
-<p>مرحباً بكم في موقعي الشخصي ومعرض أعمالي</p>
-</div>
+<div class="band"></div>
+<header><div class="wrap">
+<button class="pbtn" onclick="window.print()">تحميل / طباعة نسخة PDF</button>
+<h1>فاطمة علي آل طالع</h1>
+<p class="role">بكالوريوس نظم معلومات | الدعم التقني والمحتوى الرقمي</p>
+<ul class="say"><li>أرتّب البيانات حتى تتكلم.</li><li>أبسّط الأنظمة ليفهمها من يبدأ اليوم.</li><li>أوثّق الإنجاز بالصورة والفيديو.</li></ul>
+<p class="lead">خريجة نظم معلومات، أجمع بين التفكير المنطقي والخبرة العملية في أنظمة الموارد البشرية (HRIS) والدعم التقني وتحليل البيانات.</p>
+<div class="stats"><span>المعدل 4.06 من 5</span><span>تدريب تقني 6 أشهر في بلدية محايل</span><span>شهادة تميز من أمانة عسير</span></div>
+</div></header>
+<nav><div class="wrap"><a href="#exp">الخبرات</a><a href="#projects">المشاريع</a><a href="#skills">المهارات</a><a href="#certs">الشهادات</a><a href="#edu">التعليم</a><a href="#rec">التوصيات</a><a href="#contact">التواصل</a></div></nav>
+<main class="wrap">
+
+<section id="exp"><h2>الخبرات المهنية</h2>
+<ol class="tl">
+<li><button aria-expanded="false"><b>متدربة تقنية المعلومات | بلدية محايل، أمانة عسير</b><small>سبتمبر 2025 – مارس 2026</small>
+<div class="more">
+<div>• إنتاج فيديوهات Time-lapse لتوثيق المشاريع بـ Adobe Premiere، وتصميم الإنفوجرافيك والعروض عبر Canva.</div>
+<div>• دعم تجربة المستخدم: الدعم الفني للموظفين على الأنظمة الإلكترونية وإعداد أدلة استخدام مبسطة.</div>
+<div>• إدارة الأصول والشبكات: حصر وتحديث قاعدة بيانات الأجهزة والمعدات.</div>
+<div>• تحليل بيانات البلاغات والأعطال المتكررة ورفع توصيات دورية، وتشغيل البلاغات عبر منصة مكين من التسجيل حتى الإغلاق.</div>
+</div></button></li>
+<li><button aria-expanded="false"><b>برنامج تطوير اللغة الإنجليزية | السودة للتطوير</b><small>2025 – تدريب مكثف لمدة ثلاثة أشهر</small></button></li>
+<li><button aria-expanded="false"><b>مدخلة بيانات الموارد البشرية | شركة الغنيم المحدودة</b><small>مايو 2022 – سبتمبر 2024، دوام كامل</small>
+<div class="more">
+<div>• إدخال بيانات الموارد البشرية وتحديثها: الجزاءات، مسيرات الرواتب، الساعات الإضافية، الحضور والانصراف عبر ساب بيزنس.</div>
+<div>• تصميم حقيبة تدريبية للمتدرب الجديد (انظري قسم المشاريع).</div>
+<div>• مهام إضافية في التوظيف: المقابلات الوظيفية، توصيفات الشواغر، إعلانات الوظائف، وتقارير التعيينات والاستقالات.</div>
+<div>• مهام إشرافية على الفرع (2023 – 2024): متابعة سير عمل الأقسام ورصد الحضور وتحفيز الفريق.</div>
+</div></button></li>
+</ol></section>
+
+<section id="projects"><h2>المشاريع</h2>
+<div class="kit"><b>حقيبة المتدرب الجديد</b>
+<p>صممتها أثناء عملي في الموارد البشرية بشركة الغنيم لتكون مرجعاً للمتدرب الجديد منذ يومه الأول، وتجمع ما يحتاجه في مكان واحد.</p>
+<div class="folders">
+<div><b>أنظمة ولوائح العمل</b>ما يحكم العمل، ليعرف المتدرب ما له وما عليه.</div>
+<div><b>اللوائح الداخلية</b>اللوائح التنظيمية للشركة بصياغة واضحة.</div>
+<div><b>وسائل التواصل</b>كيف يوصل سؤاله أو طلبه للجهة المناسبة.</div>
+</div></div>
+</section>
+
+<section id="skills"><h2>المهارات</h2>
+<div class="grid"><span class="chip">Adobe Premiere</span><span class="chip">Canva</span><span class="chip">الدعم الفني</span><span class="chip">تحليل البيانات</span><span class="chip">إدارة الأصول والشبكات</span><span class="chip">كتابة التقارير</span><span class="chip">الموارد البشرية والتوظيف</span><span class="chip">SAP Business One</span><span class="chip">HRIS</span><span class="chip">Python</span><span class="chip">أساسيات الأمن السيبراني</span><span class="chip">التوثيق البصري</span></div>
+<h3>مهارات شخصية</h3>
+<div class="grid"><span class="chip">التواصل الفعال</span><span class="chip">دقة الملاحظة</span><span class="chip">التنظيم</span><span class="chip">العمل ضمن فريق</span><span class="chip">سرعة التعلم</span></div>
+<h3>الدورات</h3>
+<div class="grid"><span class="chip">تحليل البيانات وتكنولوجيا المعلومات لسوق العمل</span><span class="chip">التجارة الإلكترونية</span><span class="chip">التفكير التصميمي</span><span class="chip">التسويق الإلكتروني</span></div>
+</section>
+
+<section id="certs"><h2>الشهادات والدورات</h2>
+<div class="grid">
+<span class="chip"><b>Data Fundamentals</b><br>IBM، أبريل 2026</span>
+<span class="chip"><b>الحوسبة السحابية على Azure</b><br>مسك المهارات، أبريل 2026</span>
+<span class="chip"><b>تحليل الاستجابة لحوادث الأمن السيبراني</b><br>تجربة عمل افتراضية مع stc عبر مسك، أبريل 2022</span>
+<span class="chip"><b>Python</b><br>TechCampus</span>
+<span class="chip"><b>تحليل البيانات</b><br>دروب، ديسمبر 2019</span>
+<span class="chip"><b>التوعية بمخاطر الأمن السيبراني</b><br>دروب، ديسمبر 2019</span>
+<span class="chip"><b>تصميم الفرص التطوعية</b><br>دروب، ديسمبر 2019</span>
+</div></section>
+
+<section id="edu"><h2>التعليم</h2>
+<div class="chip" style="display:block;padding:14px 18px"><b>بكالوريوس نظم المعلومات</b><br>جامعة الملك خالد، كلية العلوم والآداب برجال ألمع<br><small style="color:var(--mute)">التخرج مايو 2018، تقدير جيد جداً، المعدل التراكمي 4.06 من 5</small></div>
+</section>
+
+<section id="rec"><h2>التوصيات والشهادات</h2>
+<div class="slider" aria-live="polite">
+<div class="slide on"><span class="tag">شهادة تميز</span>
+<p>منحتها أمانة منطقة عسير شهادة تميز لمستواها المميز في الالتزام والانضباط خلال فترة التدريب، وكانت مثالاً يُحتذى به في الأداء والمبادرة والتعاون.</p>
+<div class="who">م. عبدالله بن مهدي الجالي، أمين أمانة عسير، 1 سبتمبر – 1 ديسمبر 2025</div></div>
+<div class="slide"><span class="tag">شهادة توصية</span>
+<p>أشادت إدارة تقنية المعلومات والتحول الرقمي ببلدية محايل بمستواها المتميز في الجدية والالتزام، وسرعة التعلم، وتنظيم الأعمال، والتعاون الإيجابي مع الفريق، وروح المبادرة وتحمل المسؤولية.</p>
+<p>وأكدت التوصية حرصها على خصوصية البيانات وسريتها، وأن لديها الكفاءة التي تؤهلها لتكون إضافة فاعلة لأي جهة.</p>
+<div class="who">م. وليد بن عبدالله السرحاني، مدير إدارة تقنية المعلومات والتحول الرقمي، 2 أغسطس 2026</div></div>
+<div class="slide"><span class="tag">شهادة خبرة</span>
+<p>أمضت فترة تدريب لمدة ستة أشهر في إدارة تقنية المعلومات ببلدية محايل، وكانت متميزة في عملها ومحافظة على أوقات الدوام، وأنجزت ما أُوكل إليها بكل جد واقتدار.</p>
+<p>حصلت على تقدير <b>امتياز</b> من مشرف الإدارة.</p>
+<div class="who">م. وليد عبدالله السرحاني، مدير تقنية المعلومات، بلدية محايل</div></div>
+<div class="slide"><span class="tag">شهادة خدمة</span>
+<p>شهادة خدمة صادرة عبر منصة قوى من شركة الغنيم المحدودة، تثبت عملها بدوام كامل من 18 مايو 2022 إلى 17 سبتمبر 2024.</p>
+<div class="who">معتمدة من وزارة الموارد البشرية والتنمية الاجتماعية، ويمكن التحقق منها برمز QR</div></div>
+<div class="slide"><span class="tag">إتمام برنامج التدريب التطوعي</span>
+<p>أتمت برنامج التدريب التطوعي في بلدية محايل، إدارة تقنية المعلومات، من 1 سبتمبر 2025 إلى 2 مارس 2026.</p>
+<div class="who">د. أحمد بن حسن الفيفي، نائب أمين منطقة عسير</div></div>
+<div class="ctrl"><button id="next">التالي</button><div class="dots"><i class="on"></i><i></i><i></i><i></i><i></i></div><button id="prev">السابق</button></div>
+</div></section>
+
+<section id="contact" class="contact"><h2>التواصل</h2>
+<p>البريد: <a href="mailto:Fatima3lih@gmail.com">Fatima3lih@gmail.com</a><br>الجوال: <a href="tel:0558142924" dir="ltr">0558142924</a><br>لينكدإن: <a href="https://www.linkedin.com/in/%D9%81%D8%A7%D8%B7%D9%85%D8%A9-%D8%B9%D9%84%D9%8A-2b5648170" target="_blank" rel="noopener">فاطمة علي على لينكدإن</a></p>
+<div class="qr"><div id="qr"></div><small>امسح الرمز للوصول مباشرة إلى حسابي في لينكدإن</small></div>
+</section>
+</main>
+<footer><div class="wrap">الشهادات الأصلية متوفرة عند الطلب.</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+document.querySelectorAll('.tl button').forEach(function(b){b.addEventListener('click',function(){var li=b.parentNode;var o=li.classList.toggle('open');b.setAttribute('aria-expanded',o)})});
+var s=document.querySelectorAll('.slide'),d=document.querySelectorAll('.dots i'),n=0;
+function go(i){n=(i+s.length)%s.length;s.forEach(function(x,k){x.classList.toggle('on',k===n);d[k].classList.toggle('on',k===n)})}
+document.getElementById('next').onclick=function(){go(n+1)};
+document.getElementById('prev').onclick=function(){go(n-1)};
+try{new QRCode(document.getElementById('qr'),{text:"https://www.linkedin.com/in/%D9%81%D8%A7%D8%B7%D9%85%D8%A9-%D8%B9%D9%84%D9%8A-2b5648170",width:140,height:140,colorDark:"#1c2538",colorLight:"#ffffff",correctLevel:QRCode.CorrectLevel.M})}catch(e){var q=document.querySelector('.qr');if(q)q.style.display='none'}
+var paused=false,tm=null,sl=document.querySelector('.slider');
+if(!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){
+setInterval(function(){if(!paused)go(n+1)},6000);
+['mouseenter','focusin'].forEach(function(e){sl.addEventListener(e,function(){paused=true})});
+['mouseleave','focusout'].forEach(function(e){sl.addEventListener(e,function(){paused=false})});
+sl.addEventListener('touchstart',function(){paused=true;clearTimeout(tm);tm=setTimeout(function(){paused=false},10000)},{passive:true});
+}
+</script>
 </body>
 </html>
